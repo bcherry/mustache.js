@@ -133,7 +133,7 @@ var Mustache = function() {
           translation_mode = { _mode: context['_mode'] };
         }
 
-        return that.render(_(content, translation_mode), context, partials, true);
+        return that.render(i18n(content, translation_mode), context, partials, true);
       });
     },
 
